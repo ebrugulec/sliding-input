@@ -52,7 +52,8 @@ SlidingInput.defaultProps = {
     height: 23,
     min: 0,
     max: 50,
-    step: null
+    step: null,
+    onChange: () => {}
 }
 SlidingInput.propTypes = {
     value: PropTypes.number,
@@ -62,7 +63,7 @@ SlidingInput.propTypes = {
     width: PropTypes.number,
     height: PropTypes.number,
     className: PropTypes.string,
-    onChange: () => {}
+    onChange: PropTypes.func
 }
 
 export default SlidingInput;
